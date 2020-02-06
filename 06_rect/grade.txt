@@ -1,9 +1,0 @@
-Grading at Sat Feb  1 23:37:07 UTC 2020
-Attempting to compile rectangle.c
-rectangle.c:1:19: error: extra tokens at end of #include directive [-Werror]
- #include <stdio.h>rectangle.c
-                   ^
-cc1: all warnings being treated as errors
-The code did not compile!
-
-Overall Grade: F

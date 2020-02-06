@@ -1,4 +1,4 @@
-#include <stdio.h>rectangle.c
+#include <stdio.h>
 #include <stdlib.h>
 //I've provided "min" and "max" functions in
 //case they are useful to you
@@ -31,7 +31,7 @@ rectangle intersection(rectangle r1, rectangle r2) {
   rectangle r;
   r1=canonicalize(r1);
   r2=canonicalize(r2);
-  if (((r1.x+r1.width )<r2.x )||((r1.y+r1.height )<r2.y ) || ((r2.x+r2.width )<r1.x )||((r2.y+r2.height )<r1.y))
+  if (((r1.x+r1.width<r2.x )||(r1.y+r1.height<r2.y)) || ((r2.x+r2.width<r1.x)||(r2.y+r2.height <r1.y)))
     {r.x=0;
       r.y=0;
       r.width=0;
