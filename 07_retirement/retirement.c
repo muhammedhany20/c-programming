@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-typedef struct _retire_info {
+ struct _retire_info {
   int months;
   double contribution;
-  double rate_of_return;} retire_info;
+   double rate_of_return;};
+typedef struct _retire_info retire_info;
 void retirement (int startAge,   //in months
 		 double initial, //initial savings in dollars
 		 retire_info working, //info about working
