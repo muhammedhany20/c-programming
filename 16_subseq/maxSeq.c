@@ -7,11 +7,11 @@ size_t maxSeq(int * array, size_t n)
   int max = 1;
   int current = 1;
   for (int i=1; i < n; ++i) {
-  if (array[i] > array[i-1]) {
-    current += 1;
+    if (array[i] > array[i-1]) {
+      current += 1;
+    }
+    if (current > max) {
+      max = current;
+    }
   }
- if (current > max) {
-   max = current;
- }
-}
   return max;}
